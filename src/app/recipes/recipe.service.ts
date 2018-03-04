@@ -25,11 +25,19 @@ export class RecipeService {
             ])
     ];
 
-    constructor(private shoppingListService: ShoppingListService){
+    constructor(private shoppingListService: ShoppingListService) {
     }
 
     getRecipes() {
         return this.recipes.slice(); // return new copy of array
+    }
+
+    getRecipe(id: number) {
+        return this.recipes[id];
+    }
+
+    getId(recipe: Recipe) {
+        return this.recipes.indexOf(recipe);
     }
 
     addIngredientsToShoppingList(ingredients: Ingredient[]) {

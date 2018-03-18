@@ -44,13 +44,19 @@ export class RecipeService {
         this.shoppingListService.addIngredients(ingredients);
     }
 
-    addRecipe(recipe: Recipe) {
-      this.recipes.push(recipe);
-      this.recipesChanged.next(this.recipes.slice())
+    addRecipe(recipe: Recipe): number {
+      const index = this.recipes.push(recipe) - 1;
+      this.recipesChanged.next(this.recipes.slice());
+      return index;
     }
 
     updateRecipe(index: number, recipe: Recipe) {
       this.recipes[index] = recipe;
+      this.recipesChanged.next(this.recipes.slice())
+    }
+
+    deleteRecipe(index: number) {
+      this.recipes.splice(index, 1);
       this.recipesChanged.next(this.recipes.slice())
     }
 }

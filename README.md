@@ -1,4 +1,4 @@
-# NgUdemyPrj
+# Recipe Book
 
 Recipe book single application using Angular frontend and Firebase backend. Example project developed for 
 [Angular 2+ Udemy course](https://www.udemy.com/the-complete-guide-to-angular-2/learn/v4/overview) by Maximilian Schwarzmüller.

@@ -1,6 +1,12 @@
 # NgUdemyPrj
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2.
+Recipe book single application using Angular frontend and Firebase backend. Example project developed for 
+[Angular 2+ Udemy course](https://www.udemy.com/the-complete-guide-to-angular-2/learn/v4/overview) by Maximilian Schwarzmüller.
+
+Currently using:
+* Node 8
+* Angular 5
+* Angular CLI 1.5
 
 ## Development server
 
